@@ -17,6 +17,10 @@ app.get("/" ,(req, res)=>{
     res.send("this is root of the route");
 });
 
+app.req("/home" ,(req, res)=>{
+    res.send("this is root of the route");
+});
+
 
 let posts=[
     {
@@ -86,3 +90,5 @@ app.delete("/posts/:id", (req, res)=>{
 app.listen(port, ()=>{
     console.log("app is listening in port 8080");
 });
+
+console.log("hello world");
